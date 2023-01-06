@@ -1,0 +1,109 @@
+h1,
+h2,
+h3 {
+    font-family: "Overpass", sans-serif;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    color: #000;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p,
+ul,
+h1,
+h2,
+h3 {
+    margin-bottom: 32px;
+}
+
+li {
+    list-style-position: inside;
+    margin-bottom: 8px;
+}
+
+.content-inner {
+    margin-bottom: 150px;
+}
+
+
+@media (max-width: 930px) {
+    h2 {
+        animation: unset;
+    }
+}
+
+@media (max-width: 620px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p,
+    ul {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p,
+    ul {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p,
+    ul {
+        font-size: 14px;
+    }
+}

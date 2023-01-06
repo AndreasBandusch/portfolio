@@ -1,0 +1,131 @@
+.arrow-down-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 250px;
+
+    &:hover>.arrow-down {
+        animation: arrow 225ms ease-in-out;
+        animation-iteration-count: 1;
+    }
+
+    .arrow-down {
+        position: relative;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
+
+.other-direction {
+    flex-direction: row-reverse;
+
+    .arrow-down {
+        img {
+            transform: rotate(270deg);
+        }
+    }
+}
+
+[data-aos="top"] {
+    top: -50px;
+    right: calc(50% - 100px);
+    transition-property: top, right, opacity;
+    opacity: 0;
+
+    &.aos-animate {
+        opacity: 1;
+        top: calc(100% - 215px);
+        right: 50%;
+    }
+}
+
+[data-aos="body"] {
+    top: -50px;
+    left: calc(50% - 100px);
+    transition-property: top, left, opacity;
+    opacity: 0;
+
+    &.aos-animate {
+        opacity: 1;
+        top: calc(100% - 170px);
+        left: 50%;
+    }
+}
+
+[data-aos="bottom"] {
+    top: -100px;
+    right: calc(50% - 100px);
+    transition-property: top, right, opacity;
+    opacity: 0;
+
+    &.aos-animate {
+        opacity: 1;
+        top: calc(100% - 230px);
+        right: 50%;
+    }
+}
+
+
+@media (max-width: 930px) {
+    .arrow-down-container {
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+
+        .arrow-down {
+            width: 100%;
+
+            img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+    }
+
+    [data-aos="top"] {
+        top: -50px;
+        right: 0px;
+        transition-property: top, right, opacity;
+        opacity: 0;
+
+        &.aos-animate {
+            opacity: 1;
+            top: calc(100% - 165px);
+            right: calc(50% - 75px);
+        }
+    }
+
+    [data-aos="body"] {
+        top: -50px;
+        left: 0px;
+        transition-property: top, left, opacity;
+        opacity: 0;
+
+        &.aos-animate {
+            opacity: 1;
+            top: calc(100% - 150px);
+            left: calc(50% - 75px);
+        }
+    }
+
+    [data-aos="bottom"] {
+        top: -50px;
+        right: 0;
+        transition-property: top, right, opacity;
+        opacity: 0;
+
+        &.aos-animate {
+            opacity: 1;
+            top: calc(100% - 165px);
+            right: calc(50% - 75px);
+        }
+    }
+}

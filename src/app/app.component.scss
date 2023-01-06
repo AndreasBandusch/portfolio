@@ -1,0 +1,67 @@
+app-menu {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    height: 92px;
+    background-color: #FFFCF3;
+}
+
+app-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+app-section-footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    z-index: 2;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        transform: skewY(3deg);
+        transform-origin: 100%;
+        background-color: #000;
+        z-index: 3;
+    }
+}
+
+app-menu-open {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 92px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: #FFFCF3;
+}
+
+.site {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../assets/img/design/background-pattern.png');
+    background-size: cover;
+    z-index: 0;
+}

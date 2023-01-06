@@ -1,0 +1,52 @@
+.portfolio-header {
+    width: 540px;
+}
+
+app-portfolio-project {
+    width: 100%;
+    margin-bottom: 200px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+p {
+    margin-bottom: 92px;
+}
+
+@media (max-width: 1000px) {
+    app-portfolio-project {
+        margin-bottom: 148px;
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio-header {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    app-portfolio-project {
+        margin-bottom: 92px;
+    }
+}
+
+@media (max-width: 500px) {
+    app-portfolio-project {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 400px) {
+    app-portfolio-project {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 350px) {
+    app-portfolio-project {
+        margin-bottom: 16px;
+    }
+}

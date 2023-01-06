@@ -1,0 +1,6 @@
+<div class="portfolio-header">
+    <h2>Portfolio</h2>
+    <p>This page is a sample of my work - please feel free to try them out.</p>
+</div>
+<app-portfolio-project *ngFor="let project of projects; index as i" [project]="projects[i]"
+    [numberOfAllProjects]="projects.length" [currentProjectNumber]="i + 1"></app-portfolio-project>

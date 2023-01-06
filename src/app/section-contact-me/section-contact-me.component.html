@@ -1,0 +1,66 @@
+<div class="content-form">
+  <h2>Say hi!</h2>
+  <div class="content-inner">
+    <span class="feedback">Want to discuss a new project?</span>
+    <span class="hello">Say hello! let's discuss your ideas and make it happen</span>
+    <div #messageSend class="d-none">
+      <p>Thank you!<br>Your message has been sent!</p>
+      <button class="secondary" (click)="closeDialog()">OK</button>
+    </div>
+    <form #form #formArea (submit)="sendMail()">
+      <div class="form-inner">
+        <div class="form-element">
+          <fieldset [class.fieldset]='name.showBorder'>
+            <legend *ngIf="name.showBorder">{{ name.title }}</legend>
+            <div>
+              <input #nameField class="{{name.bgImageClass}}" type="text" placeholder="{{ name.placeholder }}"
+                [formControl]="name.validation" required (keyup)="name.showWarnMessage(true)"
+                (focus)="name.showLegend()" [class.hide-hover]="name.hideHoverEffect"
+                [class.hide-border-bottom]="name.showBorder" (keyup)="name.getErrorMessage()"
+                (focusout)="name.getErrorMessage()">
+            </div>
+          </fieldset>
+          <span *ngIf="name.validation" class="warn-message">{{ name.errorMessage }}</span>
+        </div>
+        <div class="form-element">
+          <fieldset [class.fieldset]='email.showBorder'>
+            <legend *ngIf="email.showBorder">{{ email.title }}</legend>
+            <div>
+              <input #emailField class="{{email.bgImageClass}}" type="text" placeholder="{{ email.placeholder }}"
+                [formControl]="email.validation" required (keyup)="email.showWarnMessage(true)"
+                (focus)="email.showLegend()" [class.hide-hover]="email.hideHoverEffect"
+                [class.hide-border-bottom]="email.showBorder" (keyup)="email.getErrorMessage()"
+                (focusout)="email.getErrorMessage()">
+            </div>
+          </fieldset>
+          <span *ngIf="email.validation" class="warn-message">{{ email.errorMessage }}</span>
+        </div>
+        <div class="form-element">
+          <fieldset [class.fieldset]='message.showBorder'>
+            <legend *ngIf="message.showBorder">{{ message.title }}</legend>
+            <div>
+              <textarea #messageField class="{{message.bgImageClass}}" type="text"
+                placeholder="{{ message.placeholder }}" [formControl]="message.validation" required
+                (keyup)="message.showWarnMessage(true)" (focus)="message.showLegend()"
+                [class.hide-hover]="message.hideHoverEffect" [class.hide-border-bottom]="message.showBorder"
+                (keyup)="message.getErrorMessage()" (focusout)="message.getErrorMessage()">
+            </textarea>
+            </div>
+          </fieldset>
+          <span *ngIf="message.validation" class="warn-message">{{ message.errorMessage }}</span>
+        </div>
+      </div>
+      <div class="form-bottom">
+        <div class="left"></div>
+        <button #sendButton class="secondary" [disabled]="name.hasErrors || email.hasErrors || message.hasErrors">Send
+          message
+        </button>
+        <div class="right">
+          <div class="magic-box">
+          </div>
+          <a href="#"><img class="arrow-up-white" src="assets/img/design/arrow-up-white.png"></a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

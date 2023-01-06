@@ -1,0 +1,9 @@
+<div class="menu">
+    <div class="menu-inner">
+        <a routerLink="/"><img class="logo" src="assets/img/design/logo.png" (click)="menu.closeMenu()"></a>
+        <img *ngIf="!menu.menuIsOpen" class="menu-icon open-menu" src="assets/img/design/menu-icon.png"
+            (click)="setMenuStatus()">
+        <img *ngIf="menu.menuIsOpen" class="menu-icon close-menu" src="assets/img/design/menu-close-icon.png"
+            (click)="setMenuStatus()">
+    </div>
+</div>

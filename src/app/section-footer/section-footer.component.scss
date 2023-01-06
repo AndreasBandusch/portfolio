@@ -1,0 +1,137 @@
+.legal {
+
+    a,
+    a:active,
+    a:visited,
+    a:visited {
+        color: #FFFCF3;
+        text-decoration: none;
+        transition: all 125ms ease-in-out;
+        border-bottom: 2px solid transparent;
+
+
+        &:hover {
+            border-bottom: 2px solid #5988FF;
+            transition: all 125ms ease-in-out;
+        }
+    }
+}
+
+.footer-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    color: #FFFCF3;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    height: 72px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-left {
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+    img {
+        height: 30px;
+        object-fit: contain;
+    }
+}
+
+.footer-right {
+    font-size: 16px;
+    align-items: flex-end;
+}
+
+.icon-container {
+    display: flex;
+    gap: 32px;
+
+    img {
+        height: 30px;
+        transition: all 125ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-15px);
+            transition: all 125ms ease-in-out;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 930px) {
+    .footer-container {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        padding-left: 32px;
+        padding-right: 32px;
+        height: unset;
+    }
+
+    .footer-inner {
+        flex-direction: column-reverse;
+    }
+
+    .footer-right,
+    .footer-left {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .footer-left {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+        font-size: 16px;
+
+        img {
+            height: 32px;
+        }
+    }
+
+    .footer-right {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .footer-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-left {
+        font-size: 13px;
+    }
+}

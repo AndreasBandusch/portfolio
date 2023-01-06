@@ -1,0 +1,79 @@
+app-section-top {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+app-section-about-me,
+app-section-my-skills,
+app-section-arrow-down,
+app-section-portfolio,
+app-section-bottom {
+    width: 100%;
+}
+
+app-section-my-skills,
+app-section-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+app-section-my-skills {
+    position: relative;
+}
+
+app-section-bottom {
+    position: relative;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    z-index: 1;
+
+    &::before {
+        top: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        transform: skewY(4deg);
+        transform-origin: 100%;
+        background-color: #000;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1000px) {
+    app-section-bottom {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 930px) {
+    app-section-bottom {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    app-section-bottom {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    app-section-bottom {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

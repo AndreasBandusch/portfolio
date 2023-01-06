@@ -1,0 +1,71 @@
+h1,
+h2 {
+    font-family: "Overpass", sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    color: #000;
+}
+
+.contact {
+    margin-top: 32px;
+}
+
+.source {
+    margin-top: 48px;
+}
+
+.content-inner {
+    margin-bottom: 48px;
+}
+
+@media (max-width: 930px) {
+    h2 {
+        animation: unset;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

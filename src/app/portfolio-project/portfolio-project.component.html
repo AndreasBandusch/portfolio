@@ -1,0 +1,31 @@
+<div [class.other-direction]="otherDirection" class="project-container {{direction}}">
+  <div class="number-of-projects">{{ outputCurrentProjectNumber }} &#47; {{ outputNumberOfAllProjects }}</div>
+  <div class="image">
+    <div class="image-inner">
+      <div class="image-container">
+        <img class="porfolio-image" src="assets/img/projects/{{ project.image }}">
+        <a href="{{project.projectUrl}}" target="_blank"><img class="porfolio-arrow"
+            src="assets/img/design/project-arrow.png"></a>
+        <div class="outline"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box .animation-right">
+    <div class="info-box-inner">
+      <h3>{{ project.name }}</h3>
+      <div class="technics">
+        <ul>
+          <li *ngFor="let technic of project.technics">{{ technic }}</li>
+        </ul>
+      </div>
+      <div class="description">{{ project.description }}</div>
+      <div class="button-container">
+        <div class="button-left"><a href="{{project.projectUrl}}" target="_blank"><button
+              class="primary">Try</button></a></div>
+        <div class="button-right"><a href="{{project.gitHubUrl}}" target="_blank"><button
+              class="primary">GitHub</button></a></div>
+      </div>
+    </div>
+  </div>
+</div>
