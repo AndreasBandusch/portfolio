@@ -10,35 +10,44 @@ export class SectionPortfolioComponent {
   numberOfProjects: number;
   projects: any = [
     {
-      "name": "El Polo Loco",
+      "name": "Join",
       "description": "A simple Jump-and-Run game based od an object-orient appoach. Help Pepe to find coins and poison bottles to fight against the great El Polo Loco.",
-      "image": "el-pollo-loco.png",
+      "image": "join.png",
       "technics": ["Angular", "JavaScript", "HTML", "CSS"],
-      "projectUrl": "https://www.andreas-bandusch.de",
+      "projectUrl": "https://join.andreas-bandusch.de",
       "gitHubUrl": "https://github.com/AndreasBandusch/el-pollo-loco"
     },
     {
-      "name": "El Polo Loco",
+      "name": "El Pollo Loco",
       "description": "A simple Jump-and-Run game based od an object-orient appoach. Help Pepe to find coins and poison bottles to fight against the great El Polo Loco.",
       "image": "el-pollo-loco.png",
       "technics": ["JavaScript", "HTML", "CSS"],
-      "projectUrl": "https://www.andreas-bandusch.de",
+      "projectUrl": "https://el-pollo-loco.andreas-bandusch.de",
       "gitHubUrl": "https://github.com/AndreasBandusch/el-pollo-loco"
     },
     {
-      "name": "El Polo Loco",
-      "description": "A simple Jump-and-Run game based od an object-orient appoach. Help Pepe to find coins and poison bottles to fight against the great El Polo Loco.",
-      "image": "el-pollo-loco.png",
+      "name": "Portfolio",
+      "description": "My public portfolio website created with Angular.",
+      "image": "portfolio.png",
       "technics": ["JavaScript", "HTML", "CSS"],
       "projectUrl": "https://www.andreas-bandusch.de",
+      "gitHubUrl": "https://github.com/AndreasBandusch/portfolio"
+    },
+
+    {
+      "name": "Pokedex",
+      "description": "A simple Jump-and-Run game based od an object-orient appoach. Help Pepe to find coins and poison bottles to fight against the great El Polo Loco.",
+      "image": "pokedex.png",
+      "technics": ["JavaScript", "Rest-Api", "HTML", "CSS"],
+      "projectUrl": "https://pokedex.andreas-bandusch.de",
       "gitHubUrl": "https://github.com/AndreasBandusch/el-pollo-loco"
     },
     {
-      "name": "El Polo Loco",
+      "name": "Ring of Fire",
       "description": "A simple Jump-and-Run game based od an object-orient appoach. Help Pepe to find coins and poison bottles to fight against the great El Polo Loco.",
-      "image": "el-pollo-loco.png",
-      "technics": ["JavaScript", "HTML", "CSS"],
-      "projectUrl": "https://www.andreas-bandusch.de",
+      "image": "ring-of-fire.jpg",
+      "technics": ["Angular", "TypeScript", "Firebase", "HTML", "CSS"],
+      "projectUrl": "https://ring-of-fire.andreas-bandusch.de",
       "gitHubUrl": "https://github.com/AndreasBandusch/el-pollo-loco"
     }
 
