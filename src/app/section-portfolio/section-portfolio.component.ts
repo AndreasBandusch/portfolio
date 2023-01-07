@@ -15,7 +15,7 @@ export class SectionPortfolioComponent {
       "image": "join.png",
       "technics": ["JavaScript", "HTML", "CSS"],
       "projectUrl": "https://join.andreas-bandusch.de",
-      "gitHubUrl": "https://github.com/AndreasBandusch/el-pollo-loco"
+      "gitHubUrl": "https://github.com/AndreasBandusch/join"
     },
     {
       "name": "El Pollo Loco",
@@ -40,15 +40,15 @@ export class SectionPortfolioComponent {
       "image": "pokedex.png",
       "technics": ["JavaScript", "Api", "HTML", "CSS"],
       "projectUrl": "https://pokedex.andreas-bandusch.de",
-      "gitHubUrl": "https://github.com/AndreasBandusch/el-pollo-loco"
+      "gitHubUrl": "https://github.com/AndreasBandusch/pokedex"
     },
     {
       "name": "Ring of Fire",
-      "description": "An Angular based version of the popular drinking game.",
+      "description": "An Angular based version of the popular drinking game. Share the URL with your friends after starting a new game to play a multiplayer game together.",
       "image": "ring-of-fire.jpg",
       "technics": ["Angular", "TypeScript", "Firebase", "Material Design"],
       "projectUrl": "https://ring-of-fire.andreas-bandusch.de",
-      "gitHubUrl": "https://github.com/AndreasBandusch/el-pollo-loco"
+      "gitHubUrl": "https://github.com/AndreasBandusch/ring-of-fire"
     }
 
   ];
