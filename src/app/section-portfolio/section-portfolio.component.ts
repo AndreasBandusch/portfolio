@@ -13,7 +13,7 @@ export class SectionPortfolioComponent {
       "name": "Join",
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. Log in as a guest and feel free to try everything.",
       "image": "join.png",
-      "technics": ["JavaScript", "HTML", "CSS"],
+      "technics": ["Angular", "TypeScript", "Firebase", "Material Design Drag & Drop CDK"],
       "projectUrl": "https://join.andreas-bandusch.de",
       "gitHubUrl": "https://github.com/AndreasBandusch/join"
     },
