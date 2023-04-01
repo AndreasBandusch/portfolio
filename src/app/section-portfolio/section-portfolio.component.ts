@@ -11,7 +11,7 @@ export class SectionPortfolioComponent {
   projects: any = [
     {
       "name": "Join",
-      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. Log in as a guest and feel free to try everything.",
+      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. Create an account or log in as a guest and feel free to try everything.",
       "image": "join.png",
       "technics": ["Angular", "TypeScript", "Firebase", "Material Design Drag & Drop CDK"],
       "projectUrl": "https://join.andreas-bandusch.de",
@@ -41,15 +41,6 @@ export class SectionPortfolioComponent {
       "technics": ["JavaScript", "Api", "HTML", "CSS"],
       "projectUrl": "https://pokedex.andreas-bandusch.de",
       "gitHubUrl": "https://github.com/AndreasBandusch/pokedex"
-    },
-    {
-      "name": "Ring of Fire",
-      "description": "An Angular based version of the popular drinking game. Share the URL with your friends after starting a new game to play a multiplayer game together.",
-      "image": "ring-of-fire.jpg",
-      "technics": ["Angular", "TypeScript", "Firebase", "Material Design"],
-      "projectUrl": "https://ring-of-fire.andreas-bandusch.de",
-      "gitHubUrl": "https://github.com/AndreasBandusch/ring-of-fire"
     }
-
   ];
 }
