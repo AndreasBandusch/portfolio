@@ -50,7 +50,7 @@ export class SectionContactMeComponent {
 
 
   async sendDataToServer(formData: FormData) {
-    await fetch('https://www.andreas-bandusch.de/send_mail/send_mail.php',
+    await fetch('https://www.bandusch.com/send_mail/send_mail.php',
       {
         method: 'POST',
         body: formData
