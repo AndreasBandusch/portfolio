@@ -1,0 +1,41 @@
+@import 'colors.less';
+@import 'typography.less';
+
+.inner {
+  display: grid;
+  grid-template-columns: @column-side 1fr;
+  gap: @space-2xl; // 56px
+  // Nur oben Padding — unten übernimmt das obere Padding des Kontaktbands
+  // (72px) die Abstandsfunktion. Mit eigenem Bottom-Padding hier addierten
+  // sich beide zu 132px und der Abstand nach unten wirkte doppelt so groß
+  // wie der nach oben.
+  padding-block: @space-2xl + 4px 0; // 60px / 0
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+    gap: @space-md;
+  }
+}
+
+h2 {
+  font-size: @size-h2;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: @space-sm + 2px; // 10px
+  align-content: flex-start;
+}
+
+.badge {
+  font-family: @font-mono;
+  font-size: @size-small - 2px; // 13px
+  color: @color-text-strong;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  padding: 8px 14px;
+  border: 1px solid @color-border;
+  border-radius: @radius-sm;
+  background: @color-surface;
+}

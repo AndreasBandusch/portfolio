@@ -1,0 +1,26 @@
+<section class="about" id="ueber-mich">
+  <div class="container inner">
+    <div class="portrait">
+      <img
+        src="/images/portrait-work.webp"
+        width="672"
+        height="504"
+        alt="Andreas Bandusch am Arbeitsplatz, zwei Bildschirme mit Code"
+        loading="lazy"
+      />
+    </div>
+    <div class="content">
+      <h2>{{ t().aboutTitle }}</h2>
+      <p>{{ t().about1 }}</p>
+      <p>{{ t().about2 }}</p>
+      <div class="facts">
+        @for (fact of t().facts; track fact.k) {
+          <div class="fact">
+            <span class="k">{{ fact.k }}</span>
+            <span class="v">{{ fact.v }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

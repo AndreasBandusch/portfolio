@@ -1,0 +1,38 @@
+<section class="projects" id="projekte">
+  <div class="container">
+    <div class="head">
+      <h2>{{ t().workTitle }}</h2>
+      <span class="meta">{{ t().workMeta }}</span>
+    </div>
+
+    <div class="rows">
+      @for (p of t().projects; track p.slug; let i = $index) {
+        <article class="row">
+          <span class="num">0{{ i + 1 }}</span>
+          <div class="body">
+            <div class="title-line">
+              <h3>{{ p.title }}</h3>
+              <span class="year">{{ p.year }}</span>
+            </div>
+            <p class="desc">{{ p.desc }}</p>
+            <div class="tags">
+              @for (tag of p.tags; track tag) {
+                <span class="tag">{{ tag }}</span>
+              }
+            </div>
+            <div class="links">
+              <!-- liveUrl ist aktuell leer, siehe Offene Punkte in progress.md -->
+              @if (p.liveUrl) {
+                <a [href]="p.liveUrl" target="_blank" rel="noopener">{{ t().linkLive }}</a>
+              }
+              <a [href]="p.codeUrl" target="_blank" rel="noopener">{{ t().linkCode }}</a>
+            </div>
+          </div>
+          <div class="image">
+            <img [src]="p.image" [alt]="p.imageAlt" loading="lazy" width="320" height="200" />
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

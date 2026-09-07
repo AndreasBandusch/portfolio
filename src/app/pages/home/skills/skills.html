@@ -1,0 +1,10 @@
+<section class="skills" id="technologien">
+  <div class="container inner">
+    <h2>{{ t().skillsTitle }}</h2>
+    <div class="badges">
+      @for (skill of t().skills; track skill.name) {
+        <span class="badge">{{ skill.name }}</span>
+      }
+    </div>
+  </div>
+</section>
