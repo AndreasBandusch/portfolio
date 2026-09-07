@@ -42,3 +42,7 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Repo-Kontext, nur lokal — Sicherungskopien liegen im Vault (02 Projekte/Portfolio-Seite/)
+progress.md
+CLAUDE.md
