@@ -1,7 +1,19 @@
 @import 'colors.less';
 @import 'typography.less';
 
+:host {
+  display: block;
+  border-bottom: 1px solid @color-border-subtle;
+}
+
+// Kompensiert den sticky Header (70px), sonst landet der Anker-Sprung
+// aus der Nav unter dessen Trennlinie.
+section {
+  scroll-margin-top: 70px;
+}
+
 .inner {
+  .container();
   display: grid;
   grid-template-columns: @column-side 1fr;
   gap: @space-2xl; // 56px

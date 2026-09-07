@@ -1,8 +1,13 @@
 @import 'colors.less';
 @import 'typography.less';
 
-.site-footer {
+:host {
+  display: block;
   background: @color-dark;
+}
+
+.inner {
+  .container();
 }
 
 .bar {

@@ -1,14 +1,19 @@
 @import 'colors.less';
 @import 'typography.less';
 
-.contact-band {
+:host {
+  display: block;
+  background: @color-accent;
+}
+
+.inner {
+  .container();
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: @space-lg - 6px; // 20px
-  padding: @space-2xl + 12px @container-pad @space-4xl; // 72px / .. / 80px
-  background: @color-accent;
+  padding-block: @space-2xl + 12px @space-4xl; // 72px / .. / 80px
 }
 
 h2 {

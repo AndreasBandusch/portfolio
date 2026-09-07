@@ -1,12 +1,14 @@
-<section class="hero" id="top">
-  <div class="portrait">
-    <img src="/images/portrait-hero.webp" width="264" height="264" alt="Andreas Bandusch" fetchpriority="high" />
-  </div>
-  <div class="kicker">{{ t().kicker }}</div>
-  <h1>{{ t().heroTitle }}</h1>
-  <p>{{ t().heroText }}</p>
-  <div class="cta-row">
-    <a routerLink="/" fragment="projekte" class="cta-primary">{{ t().ctaPrimary }}</a>
-    <a routerLink="/kontakt" class="cta-secondary">{{ t().ctaSecondary }}</a>
+<section id="top">
+  <div class="inner">
+    <div class="portrait">
+      <img src="/images/portrait-hero.webp" width="264" height="264" alt="Andreas Bandusch" fetchpriority="high" />
+    </div>
+    <div class="kicker">{{ t().kicker }}</div>
+    <h1>{{ t().heroTitle }}</h1>
+    <p>{{ t().heroText }}</p>
+    <div class="cta-row">
+      <a routerLink="/" fragment="projekte" class="cta-primary">{{ t().ctaPrimary }}</a>
+      <a routerLink="/kontakt" class="cta-secondary">{{ t().ctaSecondary }}</a>
+    </div>
   </div>
 </section>

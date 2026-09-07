@@ -1,16 +1,25 @@
 @import 'colors.less';
 @import 'typography.less';
 
-.hero {
+:host {
+  display: block;
+  border-bottom: 1px solid @color-border-subtle;
+}
+
+// Kompensiert den sticky Header (70px), sonst landet der Anker-Sprung
+// aus der Nav unter dessen Trennlinie.
+section {
+  scroll-margin-top: 70px;
+}
+
+.inner {
+  .container();
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: @space-lg + 2px; // 26px
-  padding: @space-4xl @container-pad @space-2xl + 12px; // 80px / .. / 68px
-  border-bottom: 1px solid @color-border-subtle;
-  max-width: @container-max;
-  margin-inline: auto;
+  padding-block: @space-4xl @space-2xl + 12px; // 80px / .. / 68px
 }
 
 .portrait {

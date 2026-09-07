@@ -3,8 +3,18 @@
 
 @breakpoint: 900px;
 
-.site-header {
+:host {
+  display: block;
+  height: 70px;
   border-bottom: 1px solid @color-border-subtle;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: @color-white;
+}
+
+.inner {
+  .container();
 }
 
 .bar {
