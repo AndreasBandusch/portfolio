@@ -1,0 +1,190 @@
+@import 'colors.less';
+@import 'typography.less';
+
+:host {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: @space-sm;
+  font-family: @font-mono;
+  font-size: @size-label-xs;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+  font-family: @font-sans;
+  color: @color-text-strong;
+  background: @color-white;
+  border-radius: @radius-md;
+  padding: 12px 14px;
+  text-transform: none;
+  letter-spacing: normal;
+  resize: vertical;
+
+  &:disabled {
+    opacity: 0.7;
+  }
+}
+
+.privacy {
+  flex-direction: row;
+  align-items: flex-start;
+  text-transform: none;
+  letter-spacing: normal;
+  font-family: @font-sans;
+  line-height: @leading-body;
+
+  input {
+    width: 18px;
+    height: 18px;
+    flex: none;
+    margin-top: 2px;
+    accent-color: @color-accent;
+  }
+
+  span {
+    max-width: 52ch;
+  }
+}
+
+.status {
+  line-height: @leading-body;
+}
+
+button {
+  align-self: flex-start;
+  font-weight: 500;
+  border: 0;
+  border-radius: @radius-md;
+  cursor: pointer;
+  transition: @transition;
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+}
+
+// Kompakte Variante: Kontakt-Band auf der Startseite (Akzentfarbe als Hintergrund).
+:host(.compact) {
+  form {
+    gap: @space-md - 2px; // 14px
+    max-width: 520px;
+  }
+
+  .row-2 {
+    gap: @space-md - 2px; // 14px
+  }
+
+  label {
+    color: @color-on-accent-text;
+  }
+
+  input,
+  textarea {
+    font-size: @size-small;
+    border: 1px solid @color-on-accent-border;
+  }
+
+  .status {
+    font-size: @size-small;
+
+    &.success {
+      max-width: @measure-centered;
+      color: @color-white;
+      font-size: @size-body;
+    }
+
+    &.error {
+      color: #ffd7d0;
+    }
+  }
+
+  button {
+    background: @color-white;
+    color: @color-accent;
+    font-size: @size-lead - 2px; // 15px
+    padding: 14px 26px;
+
+    &:hover:not(:disabled) {
+      background: @color-accent-tint;
+    }
+  }
+}
+
+// Vollständige Variante: eigenständige Kontaktseite.
+:host(.full) {
+  form {
+    gap: @space-lg - 4px; // 18px
+  }
+
+  .row-2 {
+    gap: @space-lg - 4px; // 18px
+  }
+
+  label {
+    color: @color-text-muted;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: @size-lead - 2px; // 15px
+    border: 1px solid @color-border;
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  .privacy {
+    gap: @space-md - 2px; // 12px
+    color: @color-text;
+    font-size: @size-body - 2px; // 14px
+  }
+
+  .status {
+    font-size: @size-small;
+
+    &.success {
+      font-size: @size-lead;
+      color: @color-text-strong;
+    }
+
+    &.error {
+      color: #b3261e;
+    }
+  }
+
+  button {
+    background: @color-accent;
+    color: @color-white;
+    font-size: @size-lead - 2px; // 15px
+    padding: 14px 28px;
+    margin-top: @space-sm - 2px;
+
+    &:hover:not(:disabled) {
+      background: @color-accent-dark;
+    }
+  }
+}

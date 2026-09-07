@@ -1,0 +1,47 @@
+@if (sent()) {
+  <p class="status success" role="status">{{ t().formSuccess }}</p>
+} @else {
+  <form #contactForm="ngForm" (ngSubmit)="submit(contactForm)" novalidate>
+    <div class="row-2">
+      <label>
+        <span>{{ t().fName }}</span>
+        <input type="text" name="name" required [(ngModel)]="name" [disabled]="sending()" />
+      </label>
+      <label>
+        <span>{{ t().fMail }}</span>
+        <input type="email" name="email" required [(ngModel)]="email" [disabled]="sending()" />
+      </label>
+    </div>
+    @if (variant() === 'full') {
+      <label>
+        <span>{{ t().fSubject }}</span>
+        <select name="subject" required [(ngModel)]="subject" [disabled]="sending()">
+          <option value="" disabled selected>{{ t().fSubjectHint }}</option>
+          @for (option of t().subjectOptions; track option.value) {
+            <option [value]="option.value">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+    }
+    <label>
+      <span>{{ t().fMsg }}</span>
+      <textarea
+        name="message"
+        [rows]="variant() === 'full' ? 6 : 4"
+        required
+        [(ngModel)]="message"
+        [disabled]="sending()"
+      ></textarea>
+    </label>
+    @if (variant() === 'full') {
+      <label class="privacy">
+        <input type="checkbox" name="privacy" required [(ngModel)]="privacyAccepted" [disabled]="sending()" />
+        <span>{{ t().fPrivacy }}</span>
+      </label>
+    }
+    @if (error()) {
+      <p class="status error" role="alert">{{ t().formError }}</p>
+    }
+    <button type="submit" [disabled]="sending()">{{ t().fSend }}</button>
+  </form>
+}

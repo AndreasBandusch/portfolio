@@ -2,28 +2,5 @@
   <h2>{{ t().contactTitle }}</h2>
   <p>{{ t().contactText }}</p>
 
-  @if (sent()) {
-    <p class="status success" role="status">{{ t().formSuccess }}</p>
-  } @else {
-    <form #contactForm="ngForm" class="form" (ngSubmit)="submit(contactForm)" novalidate>
-      <div class="row-2">
-        <label>
-          <span>{{ t().fName }}</span>
-          <input type="text" name="name" required [(ngModel)]="name" [disabled]="sending()" />
-        </label>
-        <label>
-          <span>{{ t().fMail }}</span>
-          <input type="email" name="email" required [(ngModel)]="email" [disabled]="sending()" />
-        </label>
-      </div>
-      <label>
-        <span>{{ t().fMsg }}</span>
-        <textarea name="message" rows="4" required [(ngModel)]="message" [disabled]="sending()"></textarea>
-      </label>
-      @if (error()) {
-        <p class="status error" role="alert">{{ t().formError }}</p>
-      }
-      <button type="submit" [disabled]="sending()">{{ t().fSend }}</button>
-    </form>
-  }
+  <app-contact-form variant="compact" />
 </section>
