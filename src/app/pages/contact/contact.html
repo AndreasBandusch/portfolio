@@ -1,0 +1,77 @@
+<section class="page-head">
+  <div class="container">
+    <div class="kicker">{{ t().navContact }}</div>
+    <h1>{{ t().contactPageTitle }}</h1>
+    <p>{{ t().contactPageText }}</p>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container grid">
+    <div class="form-col">
+      @if (sent()) {
+        <p class="status success" role="status">{{ t().formSuccess }}</p>
+      } @else {
+        <form #contactForm="ngForm" (ngSubmit)="submit(contactForm)" novalidate>
+          <div class="row-2">
+            <label>
+              <span>{{ t().fName }}</span>
+              <input type="text" name="name" required [(ngModel)]="name" [disabled]="sending()" />
+            </label>
+            <label>
+              <span>{{ t().fMail }}</span>
+              <input type="email" name="email" required [(ngModel)]="email" [disabled]="sending()" />
+            </label>
+          </div>
+          <label>
+            <span>{{ t().fSubject }}</span>
+            <select name="subject" required [(ngModel)]="subject" [disabled]="sending()">
+              <option value="" disabled selected>{{ t().fSubjectHint }}</option>
+              @for (option of t().subjectOptions; track option.value) {
+                <option [value]="option.value">{{ option.label }}</option>
+              }
+            </select>
+          </label>
+          <label>
+            <span>{{ t().fMsg }}</span>
+            <textarea name="message" rows="6" required [(ngModel)]="message" [disabled]="sending()"></textarea>
+          </label>
+          <label class="privacy">
+            <input type="checkbox" name="privacy" required [(ngModel)]="privacyAccepted" [disabled]="sending()" />
+            <span>{{ t().fPrivacy }}</span>
+          </label>
+          @if (error()) {
+            <p class="status error" role="alert">{{ t().formError }}</p>
+          }
+          <button type="submit" [disabled]="sending()">{{ t().fSend }}</button>
+        </form>
+      }
+    </div>
+
+    <div class="side-col">
+      <div class="card">
+        <h2>{{ t().directTitle }}</h2>
+        <div class="rows">
+          @for (row of t().contactRows; track row.k) {
+            <div class="row">
+              <span class="k">{{ row.k }}</span>
+              @if (row.href) {
+                <a [href]="row.href" target="_blank" rel="noopener">{{ row.v }}</a>
+              } @else {
+                <span class="v">{{ row.v }}</span>
+              }
+            </div>
+          }
+        </div>
+      </div>
+      <div class="card outline">
+        <h2>{{ t().availTitle }}</h2>
+        <p>{{ t().availText }}</p>
+        <div class="badge">
+          <span class="dot"></span>
+          <span>{{ t().availBadge }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

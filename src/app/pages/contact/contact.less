@@ -1,0 +1,243 @@
+@import 'colors.less';
+@import 'typography.less';
+
+.page-head {
+  border-bottom: 1px solid @color-border-subtle;
+  padding-block: @space-2xl + 4px @space-xl + 12px; // 64px / 44px
+
+  .kicker {
+    font-family: @font-mono;
+    font-size: @size-label-xs;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: @color-accent;
+    margin-bottom: @space-md;
+  }
+
+  h1 {
+    max-width: 26ch;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: -0.01em;
+    text-wrap: pretty;
+    margin-bottom: @space-md;
+  }
+
+  p {
+    max-width: @measure-text;
+    font-size: @size-lead;
+    line-height: @leading-loose;
+    color: @color-text;
+    text-wrap: pretty;
+  }
+}
+
+.page-body {
+  padding-block: @space-2xl + 4px; // 56px
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: @space-4xl - 16px; // 64px
+  align-items: start;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+    gap: @space-2xl;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: @space-lg - 4px; // 18px
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: @space-lg - 4px; // 18px
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: @space-sm;
+  font-family: @font-mono;
+  font-size: @size-label-xs;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: @color-text-muted;
+}
+
+input,
+select,
+textarea {
+  font-family: @font-sans;
+  font-size: @size-lead - 2px; // 15px
+  color: @color-text-strong;
+  background: @color-white;
+  border: 1px solid @color-border;
+  border-radius: @radius-md;
+  padding: 12px 14px;
+  text-transform: none;
+  letter-spacing: normal;
+
+  &:disabled {
+    opacity: 0.7;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.privacy {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: @space-md - 2px; // 12px
+  text-transform: none;
+  letter-spacing: normal;
+  font-family: @font-sans;
+  color: @color-text;
+  font-size: @size-body - 2px; // 14px
+  line-height: @leading-body;
+
+  input {
+    width: 18px;
+    height: 18px;
+    flex: none;
+    margin-top: 2px;
+    accent-color: @color-accent;
+  }
+
+  span {
+    max-width: 52ch;
+  }
+}
+
+.status {
+  font-size: @size-small;
+  line-height: @leading-body;
+
+  &.success {
+    font-size: @size-lead;
+    color: @color-text-strong;
+  }
+
+  &.error {
+    color: #b3261e;
+  }
+}
+
+button {
+  align-self: flex-start;
+  background: @color-accent;
+  color: @color-white;
+  font-weight: 500;
+  font-size: @size-lead - 2px; // 15px
+  padding: 14px 28px;
+  border: 0;
+  border-radius: @radius-md;
+  margin-top: @space-sm - 2px;
+  cursor: pointer;
+  transition: @transition;
+
+  &:hover:not(:disabled) {
+    background: @color-accent-dark;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+}
+
+.side-col {
+  display: flex;
+  flex-direction: column;
+  gap: @space-2xl - 30px; // 26px
+}
+
+.card {
+  border: 1px solid @color-border-subtle;
+  border-radius: @radius-lg;
+  padding: @space-2xl - 34px; // 26px
+  display: flex;
+  flex-direction: column;
+  gap: @space-md;
+
+  &.outline p {
+    font-size: @size-small;
+    line-height: @leading-body;
+    color: @color-text;
+    text-wrap: pretty;
+  }
+
+  h2 {
+    font-size: @size-h4;
+  }
+}
+
+.card:not(.outline) {
+  background: @color-surface;
+  border-color: @color-border-subtle;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: @space-md - 2px; // 12px
+  font-size: @size-small;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  .k {
+    font-family: @font-mono;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: @color-text-muted;
+  }
+
+  a,
+  .v {
+    align-self: flex-start;
+    color: @color-text-strong;
+  }
+
+  a {
+    color: @color-accent;
+
+    &:hover {
+      color: @color-accent-dark;
+    }
+  }
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: @space-sm + 2px; // 10px
+  padding-top: @space-xs;
+  font-family: @font-mono;
+  font-size: @size-label;
+  color: @color-accent;
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: @color-accent;
+  }
+}
