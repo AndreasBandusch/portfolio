@@ -185,9 +185,9 @@ export const DE: Language = {
     { name: 'NestJS / Node.js' },
     { name: 'PostgreSQL' },
     { name: 'REST-APIs / WebSockets' },
+    { name: 'Firebase' },
     { name: 'Docker' },
     { name: 'Git' },
-    { name: 'Firebase' },
   ],
 
   projects: [

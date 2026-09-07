@@ -17,11 +17,7 @@ section {
   display: grid;
   grid-template-columns: @column-side 1fr;
   gap: @space-2xl; // 56px
-  // Nur oben Padding — unten übernimmt das obere Padding des Kontaktbands
-  // (72px) die Abstandsfunktion. Mit eigenem Bottom-Padding hier addierten
-  // sich beide zu 132px und der Abstand nach unten wirkte doppelt so groß
-  // wie der nach oben.
-  padding-block: @space-2xl + 4px 0; // 60px / 0
+  padding-block: @space-2xl + 4px; // 60px
 
   @media (max-width: 760px) {
     grid-template-columns: 1fr;
