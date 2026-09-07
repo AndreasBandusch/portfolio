@@ -1,0 +1,36 @@
+// Portfolio bandusch.com — Farbpalette
+// Stand 06.09.2026. Sechzehn Werte plus Weiß, gruppiert nach Hintergrund.
+// Grundsatz: ein Akzentton (Petrol), sonst Graustufen. Jedes farbige Band
+// bekommt eigene Vordergrundwerte, weil sonst der Kontrast nicht stimmt.
+
+// ─── Akzent ────────────────────────────────────────────────────────────────
+@color-accent:               #0f766e; // Buttons, Links, Kontaktband
+@color-accent-dark:          #0b5c56; // Hover auf Akzentflächen
+@color-accent-tint:          #e6f2f0; // Projekt-Badges, helle Akzentflächen
+@color-accent-soft:          #9fc4bf; // Projektnummern, Zierakzent auf Weiß
+
+// ─── Text auf hellem Grund ─────────────────────────────────────────────────
+@color-text-strong:          #0f172a; // Überschriften; gleichzeitig Fläche der dunklen Bänder
+@color-text:                 #475569; // Fließtext
+@color-text-muted:           #8b95a1; // Labels, Jahre, Rubriken
+
+// ─── Flächen und Rahmen auf hellem Grund ───────────────────────────────────
+@color-white:                #ffffff;
+@color-surface:              #f6f8fa; // Karten, Technologie-Badges, Zeilen-Hover
+@color-border:               #dfe3e8; // Rahmen von Flächen und Formularfeldern
+@color-border-subtle:        #eceff3; // feine Trennlinien
+@color-border-interactive:   #cbd2da; // Sekundär-CTA, Checkbox — umreißt Klickbares
+
+// ─── Auf dem Petrol-Band (Kontakt) ─────────────────────────────────────────
+@color-on-accent-text:       #c9e4e0; // Fließtext und Feldlabels auf Petrol
+@color-on-accent-border:     #4d9a94; // Formularrahmen auf Petrol
+
+// ─── Auf dem dunklen Band (Fußzeile, Mobilmenü) ────────────────────────────
+@color-dark:                 @color-text-strong; // #0f172a als Fläche
+@color-on-dark-link:         #c9d3de; // Fußzeilen-Links
+@color-on-dark-muted:        #7c8899; // Copyright
+@color-on-dark-border:       #3c5a63; // Rahmen des inaktiven DE/EN-Buttons
+
+// Hinweis: @color-border-interactive (#cbd2da) und @color-on-dark-link (#c9d3de)
+// liegen im Hex nah beieinander, sind aber kein Duplikat — der eine ist Rahmen
+// auf Weiß, der andere Text auf #0f172a.

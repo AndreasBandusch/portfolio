@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/colors.less';
+@import 'styles/typography.less';
+@import 'styles/fonts.less';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: @font-sans;
+  font-size: @size-body;
+  line-height: @leading-body;
+  color: @color-text;
+  background: @color-white;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: @font-serif;
+  font-weight: 600;
+  color: @color-text-strong;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+// Links sind immer unterstrichen — Farbe allein darf einen Link nicht
+// kennzeichnen (Barrierefreiheit), siehe Vault-Notiz.
+a {
+  color: @color-accent;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: @color-accent-dark;
+  }
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// Gemeinsamer Container für Header, Footer und Sektionsinhalte innerhalb
+// randloser Bänder — siehe Vault-Notiz, Abschnitt "Layout".
+.container {
+  max-width: @container-max;
+  margin-inline: auto;
+  padding-inline: @container-pad;
+}

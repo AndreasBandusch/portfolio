@@ -1,0 +1,59 @@
+// Portfolio bandusch.com — Typografie und Abstände
+// Stand 06.09.2026. Headline-Größen liegen auf dem 8er-Raster, damit
+// Schriftgrade und Abstände dieselben Schritte benutzen.
+
+// ─── Schriftfamilien ───────────────────────────────────────────────────────
+@font-serif:        'Source Serif 4', Georgia, serif;      // Überschriften, 600
+@font-sans:         'IBM Plex Sans', system-ui, sans-serif; // Fließtext, UI
+@font-mono:         'IBM Plex Mono', monospace;             // Labels, Jahre, Wortmarke
+
+// ─── Schriftgrade Desktop ──────────────────────────────────────────────────
+@size-h1:           48px; // Hero
+@size-h2:           32px; // Sektionsüberschriften
+@size-h3:           24px; // Projekttitel, Blocküberschriften
+@size-h4:           20px; // Karten in der Seitenspalte
+@size-lead:         17px; // Hero-Text, erster Absatz Über mich
+@size-body:         16px; // Fließtext
+@size-small:        15px; // Formularwerte, Kontaktzeilen
+@size-label:        12px; // Mono-Labels, Jahre, Fußzeile
+@size-label-xs:     11px; // Feldlabels in Versalien
+
+// ─── Schriftgrade Mobil (390px) ────────────────────────────────────────────
+@size-h1-mobile:    32px;
+@size-h2-mobile:    24px;
+@size-body-mobile:  15px;
+@size-small-mobile: 14px;
+
+// ─── Zeilenhöhen und Maße ──────────────────────────────────────────────────
+@leading-tight:     1.14; // H1
+@leading-heading:   1.3;
+@leading-body:      1.7;
+@leading-loose:     1.75; // Über mich, längere Absätze
+
+@measure-text:      62ch; // Fließtext über die ganze Spalte
+@measure-narrow:    48ch; // Projektbeschreibungen neben dem Bild
+@measure-centered:  52ch; // zentrierter Text im Kontaktband
+
+// ─── Abstände (8er-Raster) ─────────────────────────────────────────────────
+@space-xs:           4px;
+@space-sm:           8px;
+@space-md:          16px;
+@space-lg:          24px;
+@space-xl:          32px;
+@space-2xl:         56px;
+@space-3xl:         64px;
+@space-4xl:         80px;
+
+// ─── Layout ────────────────────────────────────────────────────────────────
+@container-max:   1280px;
+@container-pad:   clamp(20px, 5vw, @space-3xl);
+@column-side:      360px; // linke Spalte in Über mich, Technologien, Impressum
+@column-image:     320px; // Projektbild, 16:10
+@portrait-hero:    132px; // rundes Hero-Porträt
+
+@radius-sm:          3px; // Badges
+@radius-md:          4px; // Buttons, Felder
+@radius-lg:          6px; // Karten in der Seitenspalte
+
+@transition:      all .18s ease; // durchgehend für alle Hover-Zustände
+@tap-min:           44px;        // Mindestgröße mobiler Tap-Flächen
