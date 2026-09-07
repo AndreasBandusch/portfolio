@@ -12,6 +12,18 @@ body {
   padding: 0;
 }
 
+// Anker-Links (Nav → Sektionen) landen sonst unter dem sticky Header (70px).
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family: @font-sans;
   font-size: @size-body;
