@@ -45,22 +45,20 @@
 .side-nav {
   display: flex;
   flex-direction: column;
-  gap: @space-sm + 2px; // 10px
+  gap: @space-md; // 16px
   font-family: @font-mono;
   font-size: @size-label;
-  color: @color-text-muted;
   position: sticky;
-  top: @space-lg;
+  top: 86px; // 70px Header + 16px Luft
   align-self: start;
 
   a {
-    padding-block: @space-sm - 2px;
-    border-bottom: 1px solid @color-border-subtle;
-    color: inherit;
+    color: @color-text;
     text-decoration: none;
     transition: @transition;
 
-    &:hover {
+    &:hover,
+    &[aria-current] {
       color: @color-accent;
     }
   }
