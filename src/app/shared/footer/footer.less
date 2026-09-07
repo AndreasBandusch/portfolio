@@ -1,0 +1,36 @@
+@import 'colors.less';
+@import 'typography.less';
+
+.site-footer {
+  background: @color-dark;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: @space-md;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: @space-lg + 2px; // 26px
+  font-family: @font-mono;
+  font-size: @size-label;
+}
+
+.copyright {
+  color: @color-on-dark-muted;
+}
+
+.footer-nav {
+  display: flex;
+  gap: @space-lg + 2px; // 26px
+
+  a {
+    color: @color-on-dark-link;
+    text-decoration: none;
+    transition: @transition;
+
+    &:hover {
+      color: @color-white;
+    }
+  }
+}

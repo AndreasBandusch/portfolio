@@ -1,0 +1,52 @@
+<header class="site-header">
+  <div class="container bar">
+    <a routerLink="/" fragment="top" class="wordmark" (click)="closeMenu()">
+      bandusch<span class="accent">.com</span>
+    </a>
+
+    <nav class="nav-desktop" [attr.aria-label]="t().navHome">
+      <a routerLink="/" fragment="top" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{
+        t().navHome
+      }}</a>
+      <a routerLink="/" fragment="projekte">{{ t().navWork }}</a>
+      <a routerLink="/" fragment="ueber-mich">{{ t().navAbout }}</a>
+      <a routerLink="/" fragment="technologien">{{ t().navSkills }}</a>
+      <a routerLink="/kontakt" routerLinkActive="active">{{ t().navContact }}</a>
+      <span class="lang-switch">
+        <button type="button" [class.active]="lang() === 'de'" (click)="setLang('de')">DE</button>
+        <button type="button" [class.active]="lang() === 'en'" (click)="setLang('en')">EN</button>
+      </span>
+    </nav>
+
+    <button
+      type="button"
+      class="burger"
+      (click)="toggleMenu()"
+      [attr.aria-label]="lang() === 'de' ? 'Menü' : 'Menu'"
+      [attr.aria-expanded]="menuOpen()"
+    >
+      <span class="burger-line" [class.open]="menuOpen()"></span>
+      <span class="burger-line" [class.open]="menuOpen()"></span>
+      <span class="burger-line" [class.open]="menuOpen()"></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" [class.open]="menuOpen()">
+  <div class="overlay-top">
+    <button type="button" class="close-btn" (click)="closeMenu()" [attr.aria-label]="lang() === 'de' ? 'Schließen' : 'Close'">
+      &times;
+    </button>
+  </div>
+  <a routerLink="/" fragment="top" (click)="closeMenu()">{{ t().navHome }}</a>
+  <a routerLink="/" fragment="projekte" (click)="closeMenu()">{{ t().navWork }}</a>
+  <a routerLink="/" fragment="ueber-mich" (click)="closeMenu()">{{ t().navAbout }}</a>
+  <a routerLink="/" fragment="technologien" (click)="closeMenu()">{{ t().navSkills }}</a>
+  <a routerLink="/kontakt" (click)="closeMenu()">{{ t().navContact }}</a>
+  <a routerLink="/impressum" (click)="closeMenu()">{{ t().navImprint }}</a>
+  <a routerLink="/datenschutz" (click)="closeMenu()">{{ t().navPrivacy }}</a>
+  <div class="lang-switch dark">
+    <button type="button" [class.active]="lang() === 'de'" (click)="setLang('de')">DE</button>
+    <button type="button" [class.active]="lang() === 'en'" (click)="setLang('en')">EN</button>
+  </div>
+</div>
