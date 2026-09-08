@@ -10,7 +10,7 @@
       <!-- Echte Sprungmarken statt der reinen Deko-Labels im Mockup. -->
       <nav class="side-nav" [attr.aria-label]="title()">
         @for (item of navItems(); track item; let i = $index) {
-          <a [href]="'#block-' + i">{{ item }}</a>
+          <a [routerLink]="[]" [fragment]="'block-' + i">{{ item }}</a>
         }
       </nav>
       <div class="blocks">

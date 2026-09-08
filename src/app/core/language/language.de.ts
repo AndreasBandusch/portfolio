@@ -13,8 +13,6 @@ export const DE: Language = {
   heroTitle: 'Anwendungen, die auch nach Jahren wartbar bleiben.',
   heroText:
     'Seit drei Jahren baue ich Weboberflächen für Fachanwendungen – heute vor allem mit Angular und TypeScript. Auf dieser Seite finden Sie eine Auswahl der Projekte, für die ich verantwortlich war.',
-  heroTextShort:
-    'Seit drei Jahren Weboberflächen für Fachanwendungen – heute vor allem mit Angular und TypeScript.',
   ctaPrimary: 'Projekte ansehen',
   ctaSecondary: 'Kontakt aufnehmen',
 
@@ -199,8 +197,6 @@ export const DE: Language = {
       imageAlt: 'DA-Bubble: Channel-Ansicht mit Nachrichtenliste und Thread-Seitenleiste',
       tags: ['Angular 22 zoneless', 'Signals / RxJS', 'NestJS', 'PostgreSQL', 'Docker'],
       desc: 'Team-Chat in Echtzeit, allein als Fullstack-Projekt umgesetzt: zoneless Angular mit Signals und RxJS, NestJS-Backend, PostgreSQL, Nachrichten über WebSockets. Läuft containerisiert über Docker Compose auf meinem eigenen VPS.',
-      descShort:
-        'Team-Chat in Echtzeit: zoneless Angular mit Signals, NestJS, PostgreSQL, WebSockets — containerisiert auf eigenem VPS.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/DA-Bubble',
     },
@@ -212,8 +208,6 @@ export const DE: Language = {
       imageAlt: 'Join: Kanban-Board mit Aufgaben-Spalten und Drag-&-Drop',
       tags: ['Angular', 'Firebase', 'RxJS'],
       desc: 'Kanban-Task-Manager mit Angular und Angular Material: Aufgaben per Drag & Drop verschieben, mit Fälligkeit, Priorität und zugewiesenen Kontakten. Daten und Authentifizierung laufen über Firebase.',
-      descShort:
-        'Kanban-Task-Manager mit Angular und Firebase: Drag & Drop, Kontaktverwaltung, Authentifizierung über Auth Guard.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/join',
     },
@@ -225,7 +219,6 @@ export const DE: Language = {
       imageAlt: 'El Pollo Loco: Spielszene mit Endboss-Kampf',
       tags: ['JavaScript', 'OOP', 'Canvas'],
       desc: 'Jump-and-Run-Spiel, objektorientiert in Vanilla JavaScript ohne Framework. Figuren und Objekte als eigene Klassen, Rendering über Canvas mit eigener Spielschleife und Kollisionsprüfung.',
-      descShort: 'Jump-and-Run in Vanilla JavaScript, objektorientiert: eigene Spielschleife, Kollisionsprüfung, Endboss.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/el-pollo-loco',
     },
@@ -237,7 +230,6 @@ export const DE: Language = {
       imageAlt: 'Pokédex: Kartenübersicht der Pokémon, nach Typ eingefärbt',
       tags: ['JavaScript', 'REST-API', 'CSS'],
       desc: 'Nachschlagewerk auf Basis der öffentlichen PokéAPI, umgesetzt in Vanilla JavaScript. Karten nach Typ eingefärbt, per Suche filterbar, mit Detailansicht für Werte und Fähigkeiten.',
-      descShort: 'Nachschlagewerk auf Basis der PokéAPI: Kartenübersicht nach Typ, Suche, Detailansicht — Vanilla JavaScript.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/pokedex',
     },

@@ -35,7 +35,6 @@ export interface Project {
   imageAlt: string;
   tags: string[];
   desc: string;
-  descShort: string;
   liveUrl: string;
   codeUrl: string;
 }
@@ -52,7 +51,6 @@ export interface Language {
   kicker: string;
   heroTitle: string;
   heroText: string;
-  heroTextShort: string;
   ctaPrimary: string;
   ctaSecondary: string;
 

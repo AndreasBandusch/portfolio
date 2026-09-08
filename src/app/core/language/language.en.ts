@@ -13,7 +13,6 @@ export const EN: Language = {
   heroTitle: 'Applications that stay maintainable for years.',
   heroText:
     'For three years I have been building web interfaces for business applications – today mainly with Angular and TypeScript. This page shows a selection of the projects I was responsible for.',
-  heroTextShort: 'Three years of web interfaces for business applications – today mainly Angular and TypeScript.',
   ctaPrimary: 'View projects',
   ctaSecondary: 'Get in touch',
 
@@ -197,8 +196,6 @@ export const EN: Language = {
       imageAlt: 'DA-Bubble: channel view with message list and thread sidebar',
       tags: ['Angular 22 zoneless', 'Signals / RxJS', 'NestJS', 'PostgreSQL', 'Docker'],
       desc: 'A real-time team chat built single-handedly as a fullstack project: zoneless Angular with signals and RxJS, NestJS back end, PostgreSQL, messages over WebSockets. Runs containerised with Docker Compose on my own VPS.',
-      descShort:
-        'Real-time team chat: zoneless Angular with signals, NestJS, PostgreSQL, WebSockets — containerised on my own VPS.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/DA-Bubble',
     },
@@ -210,7 +207,6 @@ export const EN: Language = {
       imageAlt: 'Join: kanban board with task columns and drag and drop',
       tags: ['Angular', 'Firebase', 'RxJS'],
       desc: 'A kanban task manager built with Angular and Angular Material: tasks move by drag and drop, each with due date, priority and assigned contacts. Data and authentication run on Firebase.',
-      descShort: 'Kanban task manager with Angular and Firebase: drag and drop, contact management, auth guard.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/join',
     },
@@ -222,7 +218,6 @@ export const EN: Language = {
       imageAlt: 'El Pollo Loco: gameplay scene during the boss fight',
       tags: ['JavaScript', 'OOP', 'Canvas'],
       desc: 'A jump-and-run game written in object-oriented vanilla JavaScript, no framework. Characters and objects modelled as classes, rendering on Canvas with a custom game loop and collision detection.',
-      descShort: 'Jump-and-run in vanilla JavaScript, object-oriented: custom game loop, collision detection, boss fight.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/el-pollo-loco',
     },
@@ -234,7 +229,6 @@ export const EN: Language = {
       imageAlt: 'Pokédex: card overview colour-coded by type',
       tags: ['JavaScript', 'REST API', 'CSS'],
       desc: 'A reference app on the public PokéAPI, built in vanilla JavaScript. Cards coloured by type, filterable by search, with a detail view for stats and abilities.',
-      descShort: 'Reference app on the PokéAPI: card overview by type, search, detail view — vanilla JavaScript.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/pokedex',
     },

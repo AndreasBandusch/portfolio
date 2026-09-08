@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ContentBlock } from '../../core/language/language.types';
 
 @Component({
   selector: 'app-legal-section',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './legal-section.html',
   styleUrl: './legal-section.less',
 })
