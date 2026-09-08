@@ -218,7 +218,7 @@ export const DE: Language = {
       image: '/images/project-pollo.webp',
       imageAlt: 'El Pollo Loco: Spielszene mit Endboss-Kampf',
       tags: ['JavaScript', 'OOP', 'Canvas'],
-      desc: 'Jump-and-Run-Spiel, objektorientiert in Vanilla JavaScript ohne Framework. Figuren und Objekte als eigene Klassen, Rendering über Canvas mit eigener Spielschleife und Kollisionsprüfung.',
+      desc: 'Jump-and-Run-Spiel, objektorientiert in Vanilla JavaScript ohne Framework. Figuren und Objekte als eigene Klassen, Rendering über Canvas mit eigenem Game Loop und Kollisionsprüfung.',
       liveUrl: '',
       codeUrl: 'https://github.com/AndreasBandusch/el-pollo-loco',
     },
