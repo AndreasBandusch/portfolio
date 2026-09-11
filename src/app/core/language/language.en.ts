@@ -21,7 +21,7 @@ export const EN: Language = {
 
   aboutTitle: 'About',
   about1:
-    'I build front ends for applications many people use every day: portals, dashboards, internal tools. My focus is clear architecture, dependable state management and accessibility.',
+    'I build front ends for applications many people use every day: online shops, product catalogs, customer portals. My focus is clear architecture, dependable state management and accessibility.',
   about2:
     'In projects I work closely with business owners, design and backend teams, document decisions, and hand over code a team can keep working with.',
 

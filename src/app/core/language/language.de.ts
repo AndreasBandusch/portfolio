@@ -21,7 +21,7 @@ export const DE: Language = {
 
   aboutTitle: 'Über mich',
   about1:
-    'Ich entwickle Frontends für Anwendungen, die täglich von vielen Menschen benutzt werden: Portale, Dashboards, interne Werkzeuge. Mein Schwerpunkt liegt auf klarer Architektur, verlässlicher Zustandsverwaltung und Barrierefreiheit.',
+    'Ich entwickle Frontends für Anwendungen, die täglich von vielen Menschen benutzt werden: Onlineshops, Produktkataloge, Kundenportale. Mein Schwerpunkt liegt auf klarer Architektur, verlässlicher Zustandsverwaltung und Barrierefreiheit.',
   about2:
     'In Projekten arbeite ich eng mit Fachbereich, Design und Backend zusammen, dokumentiere Entscheidungen und übergebe Code, mit dem ein Team weiterarbeiten kann.',
 
