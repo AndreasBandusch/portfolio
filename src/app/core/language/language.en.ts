@@ -28,10 +28,10 @@ export const EN: Language = {
   skillsTitle: 'Technologies',
 
   contactTitle: "Let's talk about your project.",
-  contactText: 'I welcome enquiries about permanent roles, freelance projects, or simply a professional exchange.',
+  contactText: 'I welcome enquiries about permanent roles or simply a professional exchange.',
   contactPageTitle: 'Send me a message.',
   contactPageText:
-    'For enquiries about permanent roles, freelance projects or a professional exchange. I usually reply within two working days.',
+    'For enquiries about permanent roles or a professional exchange. I usually reply within two working days.',
 
   fName: 'Name',
   fMail: 'Email',
@@ -42,7 +42,6 @@ export const EN: Language = {
   fPrivacy: 'I have read the privacy policy and agree that my details will be processed to handle this enquiry.',
   subjectOptions: [
     { value: 'festanstellung', label: 'Permanent role' },
-    { value: 'freelance', label: 'Freelance project' },
     { value: 'austausch', label: 'Professional exchange' },
     { value: 'sonstiges', label: 'Other' },
   ],
@@ -51,8 +50,7 @@ export const EN: Language = {
 
   directTitle: 'Direct contact',
   availTitle: 'Availability',
-  availText:
-    'I am currently accepting project enquiries from the fourth quarter onwards. For permanent roles I am available to talk at any time.',
+  availText: 'For permanent roles I am available to talk at any time.',
   availBadge: 'Open to enquiries',
 
   copyright: '© 2026 Andreas Bandusch',

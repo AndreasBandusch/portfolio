@@ -29,10 +29,10 @@ export const DE: Language = {
 
   contactTitle: 'Sprechen wir über Ihr Projekt.',
   contactText:
-    'Ich freue mich über Anfragen zu Festanstellung, Freelance-Projekten oder einem fachlichen Austausch.',
+    'Ich freue mich über Anfragen zu einer Festanstellung oder einem fachlichen Austausch.',
   contactPageTitle: 'Schreiben Sie mir.',
   contactPageText:
-    'Für Anfragen zu Festanstellung, Freelance-Projekten oder einem fachlichen Austausch. Ich antworte in der Regel innerhalb von zwei Werktagen.',
+    'Für Anfragen zu einer Festanstellung oder einem fachlichen Austausch. Ich antworte in der Regel innerhalb von zwei Werktagen.',
 
   fName: 'Name',
   fMail: 'E-Mail',
@@ -44,7 +44,6 @@ export const DE: Language = {
     'Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.',
   subjectOptions: [
     { value: 'festanstellung', label: 'Festanstellung' },
-    { value: 'freelance', label: 'Freelance-Projekt' },
     { value: 'austausch', label: 'Fachlicher Austausch' },
     { value: 'sonstiges', label: 'Sonstiges' },
   ],
@@ -53,8 +52,7 @@ export const DE: Language = {
 
   directTitle: 'Direkter Kontakt',
   availTitle: 'Verfügbarkeit',
-  availText:
-    'Aktuell nehme ich Anfragen für Projekte ab dem vierten Quartal an. Für Festanstellungen bin ich jederzeit ansprechbar.',
+  availText: 'Für eine Festanstellung bin ich jederzeit ansprechbar.',
   availBadge: 'Offen für Anfragen',
 
   copyright: '© 2026 Andreas Bandusch',
